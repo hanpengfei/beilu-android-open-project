@@ -1,7 +1,7 @@
 package com.scj.beilu.app.mvp.course;
 
 import android.app.Activity;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.mx.pro.lib.mvp.network.config.ShowConfig;
 import com.scj.beilu.app.base.BaseResponseCallback;

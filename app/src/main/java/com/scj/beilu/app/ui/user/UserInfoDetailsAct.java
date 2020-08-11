@@ -2,7 +2,7 @@ package com.scj.beilu.app.ui.user;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.widget.EditText;
 
 import com.scj.beilu.app.R;

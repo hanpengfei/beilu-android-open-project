@@ -15,7 +15,7 @@
         android:elevation="2dp"
         app:toolbar_title="编辑个人资料" />
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -102,5 +102,5 @@
             android:paddingRight="20dp"
             app:left_text="个性签名"
             app:right_text_hint="输入个性签名" />
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </LinearLayout>

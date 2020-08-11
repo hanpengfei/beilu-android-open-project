@@ -3,7 +3,7 @@ package com.scj.beilu.app.ui.mine;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 
 import com.mx.pro.lib.mvp.network.config.AppConfig;

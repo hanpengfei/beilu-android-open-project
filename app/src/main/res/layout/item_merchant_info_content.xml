@@ -16,7 +16,7 @@
         android:textSize="@dimen/text_size_20"
         tools:text="场馆教练" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_merchant_info_child_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

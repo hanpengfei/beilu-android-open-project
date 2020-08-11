@@ -3,7 +3,7 @@ package com.scj.beilu.app.ui.action;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.gyf.immersionbar.ImmersionBar;
 import com.scj.beilu.app.R;

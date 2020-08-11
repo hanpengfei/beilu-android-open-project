@@ -2,10 +2,10 @@ package com.scj.beilu.app.ui.fit;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.animation.FastOutSlowInInterpolator;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.ViewPager;
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
+import androidx.appcompat.app.AlertDialog;
 import android.view.MenuItem;
 import android.view.View;
 import com.gyf.immersionbar.BarHide;

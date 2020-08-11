@@ -17,7 +17,7 @@
 package com.mx.pro.lib.album.internal.entity;
 
 import android.content.pm.ActivityInfo;
-import android.support.annotation.StyleRes;
+import androidx.annotation.StyleRes;
 
 import com.mx.pro.lib.R;
 import com.mx.pro.lib.album.GlideEngine;

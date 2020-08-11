@@ -1,10 +1,9 @@
 package com.scj.beilu.app.mvp.home;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.mx.pro.lib.mvp.network.callback.ObserverCallback;
-import com.orhanobut.logger.Logger;
 import com.scj.beilu.app.mvp.base.TabPresenter;
 import com.scj.beilu.app.mvp.base.TabView;
 import com.scj.beilu.app.mvp.home.bean.EventSearchTypeBean;
@@ -15,8 +14,6 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Function;
 import io.reactivex.functions.Predicate;

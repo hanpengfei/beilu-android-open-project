@@ -28,12 +28,12 @@
             android:layout_height="match_parent"
             android:layout="@layout/layout_load_empty" />
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </FrameLayout>
 
     <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter

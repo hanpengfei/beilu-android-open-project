@@ -26,7 +26,7 @@ import com.scj.beilu.app.R;
  * date:2019/2/2
  * descriptin:可折叠的文字
  */
-public class FolderTextView extends android.support.v7.widget.AppCompatTextView {
+public class FolderTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     // TAG
     private static final String TAG = "xiaobo";

@@ -48,7 +48,7 @@
 
         </FrameLayout>
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_order_info_address_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_order_info_consignee"
                 tools:text="收货地址：重庆市渝北区君悦世纪1栋11-36 " />
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <ImageView
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/ic_imaginary" />
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
@@ -193,7 +193,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="¥299" />
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -246,7 +246,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <android.support.constraint.ConstraintLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
@@ -291,7 +291,7 @@
                     app:layout_constraintStart_toEndOf="@+id/textView5"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="299.00" />
-            </android.support.constraint.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
 
         <TextView

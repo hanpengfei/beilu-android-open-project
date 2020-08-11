@@ -1,21 +1,24 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+def signings = rootProject.ext.signings
+
 android {
 
-    def properties = new Properties()
-    def inputStream = rootProject.file('signingConfig.properties')
-    properties.load(new FileInputStream(inputStream))
+//    def properties = new Properties()
+//    def inputStream = rootProject.file('signingConfig.properties')
+//    properties.load(new FileInputStream(inputStream))
     
-    signingConfigs {
-        release {
-            keyAlias properties['KeyAlias']
-            keyPassword properties['KeyPassword']
-            storeFile file(properties['KeyFile'])
-            storePassword properties['StorePassword']
-            v1SigningEnabled true
-            v2SigningEnabled true
-        }
-    }
+//    signingConfigs {
+//        release {
+//            keyAlias properties['KeyAlias']
+//            keyPassword properties['KeyPassword']
+//            storeFile file(properties['KeyFile'])
+//            storePassword properties['StorePassword']
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+//        }
+//    }
     compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
         applicationId "com.scj.beilu.app"
@@ -23,7 +26,7 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         versionCode rootProject.versionCode
         versionName rootProject.versionName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         multiDexEnabled true
         ndk {
             //选择要添加的对应cpu类型的.so库。
@@ -36,23 +39,28 @@ android {
                 targetCompatibility 1.8
             }
         }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ 'objectbox.daoCompat' : 'true' ]
+            }
+        }
 
     }
-    buildTypes {
-        release {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
-        }
-        debug {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
-
-        }
-    }
+//    buildTypes {
+//        release {
+//            minifyEnabled true
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro.bak'
+//            signingConfig signingConfigs.release
+//        }
+//        debug {
+//            minifyEnabled true
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro.bak'
+//            signingConfig signingConfigs.release
+//
+//        }
+//    }
     android {
         lintOptions {
             abortOnError false
@@ -83,28 +91,32 @@ greendao {
 
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //    implementation rootProject.glide
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation rootProject.supportAppcompat_v4
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+//    implementation rootProject.supportAppcompat_v4
+    testImplementation 'junit:junit:4.13'
+    //noinspection GradleCompatible
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(':prolib')
+    implementation project(':mpchartlib')
     implementation rootProject.permissionsdispatcher
     annotationProcessor rootProject.permissionsdispatcher_processor
     annotationProcessor rootProject.glide_compiler
-    implementation rootProject.design
+    implementation 'com.google.android.material:material:1.2.0'
     implementation rootProject.cardview
-    implementation rootProject.eventBus
-    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
-    implementation rootProject.greenDao
-    implementation rootProject.greedDaoSqlcipher
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.6.4'
+    implementation 'org.greenrobot:greendao:3.3.0'
+    implementation 'net.zetetic:android-database-sqlcipher:4.4.0@aar'
     implementation 'com.shuyu:gsyVideoPlayer-java:6.0.3'
     implementation 'com.shuyu:gsyVideoPlayer-armv7a:6.0.3'
-    implementation project(':mpchartlib')
-    implementation 'com.aliyun.ams:alicloud-android-push:3.1.4'
-    implementation files('libs/alipaySdk.jar')
+    implementation 'com.aliyun.ams:alicloud-android-push:3.1.12'
+    compile(name:'alipaySdk', ext:'aar')
+//    implementation files('libs/alipaySdk.aar')
     implementation files('libs/BaiduLBS_Android.jar')
     implementation files('libs/tbs.jar')
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+//    implementation 'com.aliyun.ams:alicloud-android-utdid:1.1.5.4'
 }

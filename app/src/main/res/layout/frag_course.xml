@@ -50,13 +50,13 @@
         android:orientation="horizontal"
         android:weightSum="1">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_course_type_list"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:orientation="vertical"
-            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_course_type_content" />
 
         <FrameLayout

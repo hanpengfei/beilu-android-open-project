@@ -1,7 +1,7 @@
 package com.scj.beilu.app.mvp.common.share;
 
 import android.content.Context;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 
 import com.mx.pro.lib.fragmentation.support.SupportActivity;
 import com.mx.pro.lib.fragmentation.support.SupportFragment;

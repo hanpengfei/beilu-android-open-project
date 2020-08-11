@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <android.support.v4.widget.NestedScrollView
+            <androidx.core.widget.NestedScrollView
                 android:id="@+id/nested_scroll_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -51,7 +51,7 @@
                         android:layout_height="wrap_content"
                         android:visibility="gone">
 
-                        <android.support.v4.view.ViewPager
+                        <androidx.viewpager.widget.ViewPager
                             android:id="@+id/view_img"
                             android:layout_width="match_parent"
                             android:layout_height="375dp"
@@ -75,7 +75,7 @@
                     </FrameLayout>
 
 
-                    <android.support.v7.widget.LinearLayoutCompat
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/white"
@@ -108,7 +108,7 @@
                                 tools:text="1850人喜欢" />
 
 
-                            <android.support.v7.widget.RecyclerView
+                            <androidx.recyclerview.widget.RecyclerView
                                 android:id="@+id/rv_find_details_like_avatar_list"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                                 android:layout_marginLeft="20dp"
                                 android:layout_weight="1"
                                 android:orientation="horizontal"
-                                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                                 tools:listitem="@layout/item_find_like_avatar" />
 
 
@@ -218,7 +218,7 @@
                                 android:textSize="12sp"
                                 tools:text="0条" />
                         </LinearLayout>
-                    </android.support.v7.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -233,17 +233,17 @@
 
                     <include layout="@layout/layout_load_empty" />
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rv_comment_list"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:nestedScrollingEnabled="false"
                         android:orientation="vertical"
                         android:visibility="gone"
-                        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
                 </LinearLayout>
-            </android.support.v4.widget.NestedScrollView>
+            </androidx.core.widget.NestedScrollView>
 
             <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter
                 android:layout_width="match_parent"

@@ -2,7 +2,7 @@ package com.scj.beilu.app.ui.course;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 
 import com.gyf.immersionbar.ImmersionBar;

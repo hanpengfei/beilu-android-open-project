@@ -17,13 +17,13 @@
 package com.scj.beilu.app.widget.bottom.internal;
 
 import android.content.Context;
-import android.support.annotation.RestrictTo;
-import android.support.v7.view.menu.MenuBuilder;
-import android.support.v7.view.menu.MenuItemImpl;
+import androidx.annotation.RestrictTo;
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.view.menu.MenuItemImpl;
 import android.view.MenuItem;
 import android.view.SubMenu;
 
-import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
 /**
  * @hide

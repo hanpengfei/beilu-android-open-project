@@ -1,6 +1,6 @@
 package com.mx.pro.lib.fragmentation.queue;
 
-import android.support.v4.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 
 /**
  * Created by YoKey on 17/12/28.

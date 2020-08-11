@@ -1,6 +1,6 @@
 package com.mx.pro.lib.fragmentation.helper;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Created by YoKey on 17/2/5.

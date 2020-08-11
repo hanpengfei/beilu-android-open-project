@@ -19,7 +19,7 @@
         app:srlEnableAutoLoadMore="true"
         app:srlEnableRefresh="false">
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:id="@+id/nested_scroll_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -29,7 +29,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -127,7 +127,7 @@
                         app:layout_constraintStart_toEndOf="@+id/imageView6"
                         app:layout_constraintTop_toTopOf="@+id/imageView6"
                         tools:text="健身领域影响力最大的新媒体体体体，每天为用户健身排忧解难。" />
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <View
                     android:id="@+id/view_divider"
@@ -157,17 +157,17 @@
                         android:textSize="@dimen/text_size_16" />
                 </FrameLayout>
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recy_author_news_list"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:nestedScrollingEnabled="false"
                     android:orientation="vertical"
                     android:paddingTop="10dp"
-                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     tools:listitem="@layout/item_news_content" />
             </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
         <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter
             android:layout_width="match_parent"

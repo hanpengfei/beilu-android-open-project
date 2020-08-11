@@ -15,7 +15,7 @@
         android:paddingTop="5dp"
         android:paddingBottom="14dp">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
@@ -27,7 +27,7 @@
                 android:layout_width="90dp"
                 android:layout_height="120dp"
                 tools:background="#344343" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,14 +57,14 @@
                 android:textSize="@dimen/text_size_12"
                 tools:text="气质提升，让你美一辈子" />
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_home_page_course_tag"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="12dp"
                 android:layout_weight="1"
                 android:focusableInTouchMode="false"
-                app:layoutManager="android.support.v7.widget.StaggeredGridLayoutManager"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
                 tools:listitem="@layout/item_home_page_course_tag" />
 
             <TextView

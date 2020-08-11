@@ -1,8 +1,8 @@
 package com.mx.pro.lib.mvp.network.config;
 
 import android.content.Context;
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
 import android.util.Base64;
 
 import com.mx.pro.lib.mvp.MvpQueuingBasePresenter;

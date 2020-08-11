@@ -33,7 +33,7 @@
                 android:layout_height="match_parent"
                 android:layout="@layout/layout_loading_net_error" />
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_me_focus_people"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 android:orientation="vertical"
                 android:paddingLeft="19dp"
                 android:paddingRight="19dp"
-                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_more_user" />
         </FrameLayout>
 

@@ -1,6 +1,6 @@
 package com.mx.pro.lib.mvp.delegate;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.mx.pro.lib.mvp.MvpPresenter;
 import com.mx.pro.lib.mvp.MvpView;

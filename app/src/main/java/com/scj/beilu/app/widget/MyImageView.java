@@ -7,7 +7,7 @@ import android.util.AttributeSet;
  * @author Mingxun
  * @time on 2018/12/28 15:18
  */
-public class MyImageView extends android.support.v7.widget.AppCompatImageView {
+public class MyImageView extends androidx.appcompat.widget.AppCompatImageView {
     public MyImageView(Context context) {
         this(context, null);
     }

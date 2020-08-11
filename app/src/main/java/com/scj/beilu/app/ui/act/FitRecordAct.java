@@ -1,6 +1,6 @@
 package com.scj.beilu.app.ui.act;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.scj.beilu.app.R;
 import com.scj.beilu.app.base.BaseMvpActivity;

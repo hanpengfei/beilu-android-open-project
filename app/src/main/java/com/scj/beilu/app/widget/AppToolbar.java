@@ -3,13 +3,13 @@ package com.scj.beilu.app.widget;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.AppCompatTextView;
-import android.support.v7.widget.TintTypedArray;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.ColorInt;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.appcompat.widget.TintTypedArray;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -31,7 +31,7 @@ public class AppToolbar extends Toolbar {
     }
 
     public AppToolbar(Context context, @Nullable AttributeSet attrs) {
-        this(context, attrs, android.support.v7.appcompat.R.attr.toolbarStyle);
+        this(context, attrs, androidx.appcompat.R.attr.toolbarStyle);
     }
 
     @SuppressLint("RestrictedApi")

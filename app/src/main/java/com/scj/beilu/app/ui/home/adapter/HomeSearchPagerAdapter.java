@@ -1,8 +1,8 @@
 package com.scj.beilu.app.ui.home.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.scj.beilu.app.ui.home.HomeSearchFindInfoFrag;
 import com.scj.beilu.app.ui.home.HomeSearchGoodsFrag;

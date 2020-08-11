@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:background="@android:color/black" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_image_selected_list"
         android:layout_width="wrap_content"
         android:layout_height="10dp"
@@ -22,7 +22,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:orientation="horizontal"
-        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_img_selected" />
 
 

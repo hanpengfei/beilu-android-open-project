@@ -15,7 +15,7 @@
         app:menu="@menu/menu_save"
         app:toolbar_title="收货地址" />
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -202,7 +202,7 @@
                 app:switchButton_unSelectedColor="#ececec" />
         </RelativeLayout>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
         android:id="@+id/tv_delete"

@@ -2,7 +2,7 @@ package com.scj.beilu.app.mvp.user;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.mx.pro.lib.album.AlbumManager;
 import com.mx.pro.lib.album.GlideEngine;

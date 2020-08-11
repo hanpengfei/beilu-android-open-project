@@ -2,7 +2,7 @@ package com.scj.beilu.app.widget;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -15,7 +15,7 @@ import com.scj.beilu.app.R;
  * @author Mingxun
  * @time on 2019/2/18 23:13
  */
-public class ClearEditText extends android.support.v7.widget.AppCompatEditText implements View.OnFocusChangeListener, TextWatcher {
+public class ClearEditText extends androidx.appcompat.widget.AppCompatEditText implements View.OnFocusChangeListener, TextWatcher {
     /**
      * 删除按钮的引用
      */

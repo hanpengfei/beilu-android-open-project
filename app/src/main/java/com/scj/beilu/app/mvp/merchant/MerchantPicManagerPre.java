@@ -1,7 +1,7 @@
 package com.scj.beilu.app.mvp.merchant;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.mx.pro.lib.mvp.MvpView;
 import com.mx.pro.lib.mvp.network.config.BaseMvpPresenter;

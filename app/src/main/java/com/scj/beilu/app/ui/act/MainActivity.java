@@ -1,7 +1,7 @@
 package com.scj.beilu.app.ui.act;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
+import androidx.annotation.IdRes;
 
 import com.mx.pro.lib.fragmentation.support.SupportActivity;
 import com.mx.pro.lib.fragmentation.support.SupportFragment;

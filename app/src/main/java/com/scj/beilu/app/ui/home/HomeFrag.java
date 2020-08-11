@@ -6,19 +6,21 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.baidu.location.BDAbstractLocationListener;
 import com.baidu.location.BDLocation;
@@ -210,7 +212,7 @@ public class HomeFrag extends BaseMvpFragment<HomePre.HomeView, HomePre>
 
         mBanner.setImageLoader(new GlideImageLoader());
 
-        HomeButtonAdapter homeButtonAdapter = new HomeButtonAdapter(GlideApp.with(this));
+        HomeButtonAdapter homeButtonAdapter = new HomeButtonAdapter(GlideApp.with((Fragment) this));
         homeButtonAdapter.setItemClickListener(this);
         mRvButton.setAdapter(homeButtonAdapter);
 

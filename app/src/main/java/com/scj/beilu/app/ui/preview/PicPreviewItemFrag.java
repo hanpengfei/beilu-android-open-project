@@ -3,7 +3,7 @@ package com.scj.beilu.app.ui.preview;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.request.RequestOptions;

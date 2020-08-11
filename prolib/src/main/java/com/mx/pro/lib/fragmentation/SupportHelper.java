@@ -1,9 +1,9 @@
 package com.mx.pro.lib.fragmentation;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentationMagician;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.core.app.FragmentationMagician;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 

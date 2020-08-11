@@ -1,7 +1,7 @@
 package com.scj.beilu.app.mvp.news;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.mx.pro.lib.mvp.network.config.BaseMvpPresenter;
 import com.scj.beilu.app.base.BaseResponseCallback;

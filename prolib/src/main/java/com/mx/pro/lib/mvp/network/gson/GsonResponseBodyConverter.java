@@ -1,5 +1,9 @@
 package com.mx.pro.lib.mvp.network.gson;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
@@ -15,8 +19,7 @@ import okhttp3.MediaType;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
 
-import static okhttp3.internal.Util.UTF_8;
-
+import static java.nio.charset.StandardCharsets.UTF_8;
 /**
  * @author Mingxun
  * @time on 2018/12/25 10:39
@@ -30,6 +33,7 @@ public class GsonResponseBodyConverter<T> implements Converter<ResponseBody, T> 
         mTypeAdapter = typeAdapter;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public T convert(ResponseBody value) throws IOException {
         String result = value.string();

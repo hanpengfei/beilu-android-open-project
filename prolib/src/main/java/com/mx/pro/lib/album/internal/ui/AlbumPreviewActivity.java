@@ -2,7 +2,7 @@ package com.mx.pro.lib.album.internal.ui;
 
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.mx.pro.lib.album.internal.entity.Album;
 import com.mx.pro.lib.album.internal.entity.Item;

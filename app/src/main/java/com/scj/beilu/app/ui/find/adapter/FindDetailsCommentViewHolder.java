@@ -1,8 +1,8 @@
 package com.scj.beilu.app.ui.find.adapter;
 
 import android.graphics.drawable.Drawable;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.scj.beilu.app.GlideRequest;

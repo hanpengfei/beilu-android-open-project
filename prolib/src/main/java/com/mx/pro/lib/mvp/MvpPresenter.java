@@ -1,7 +1,7 @@
 package com.mx.pro.lib.mvp;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.UiThread;
+import androidx.annotation.NonNull;
+import androidx.annotation.UiThread;
 
 public interface MvpPresenter<V extends MvpView> {
 

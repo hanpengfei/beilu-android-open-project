@@ -1,7 +1,7 @@
 package com.scj.beilu.app.mvp.store;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.mx.pro.lib.mvp.network.config.BaseMvpPresenter;
 import com.mx.pro.lib.mvp.network.config.ShowConfig;

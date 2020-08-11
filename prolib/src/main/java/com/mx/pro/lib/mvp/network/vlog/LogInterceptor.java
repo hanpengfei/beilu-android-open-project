@@ -2,7 +2,7 @@ package com.mx.pro.lib.mvp.network.vlog;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.RequiresApi;
 
 import com.mx.pro.lib.BuildConfig;
 import com.mx.pro.lib.mvp.SystemUtil;

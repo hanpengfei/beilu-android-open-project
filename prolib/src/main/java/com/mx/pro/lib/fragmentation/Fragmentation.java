@@ -1,6 +1,6 @@
 package com.mx.pro.lib.fragmentation;
 
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 
 import com.mx.pro.lib.fragmentation.helper.ExceptionHandler;
 

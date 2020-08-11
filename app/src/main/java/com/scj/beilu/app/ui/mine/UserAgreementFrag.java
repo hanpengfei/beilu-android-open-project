@@ -1,7 +1,7 @@
 package com.scj.beilu.app.ui.mine;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.gyf.immersionbar.ImmersionBar;
 import com.mx.pro.lib.fragmentation.support.SupportFragment;

@@ -37,13 +37,13 @@
             android:layout="@layout/layout_loading" />
 
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
             android:paddingTop="12dp"
-            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
             tools:listitem="@layout/item_merchant_coach_album" />
     </FrameLayout>

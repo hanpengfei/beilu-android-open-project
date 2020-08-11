@@ -1,6 +1,6 @@
 package com.scj.beilu.app.mvp.common.share.model;
 
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 
 import com.scj.beilu.app.mvp.common.bean.ResultMsgBean;
 import com.tencent.mm.opensdk.modelmsg.SendMessageToWX;

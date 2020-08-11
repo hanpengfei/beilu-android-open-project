@@ -7,17 +7,17 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.AbsSavedState;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.content.res.AppCompatResources;
-import android.support.v7.view.SupportMenuInflater;
-import android.support.v7.view.menu.MenuBuilder;
-import android.support.v7.widget.TintTypedArray;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import androidx.customview.view.AbsSavedState;
+import androidx.core.view.ViewCompat;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.appcompat.view.SupportMenuInflater;
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.widget.TintTypedArray;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -28,7 +28,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.orhanobut.logger.Logger;
 import com.scj.beilu.app.R;
 import com.scj.beilu.app.widget.bottom.internal.BottomNavigationMenu;
 
@@ -155,7 +154,7 @@ public class BottomNavigationView extends FrameLayout {
 
     /**
      * Set a listener that will be notified when the currently selected bottom navigation item is
-     * reselected. This does not require an {@link android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener} to be set.
+     * reselected. This does not require an {@link com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener} to be set.
      *
      * @param listener The listener to notify
      * @see #setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener)
@@ -294,7 +293,7 @@ public class BottomNavigationView extends FrameLayout {
         /**
          * Called when an item in the bottom navigation menu is selected.
          *
-         * @param item The selected item
+         *  item The selected item
          * @return true to display the item as the selected item and false if the item should not
          * be selected. Consider setting non-selectable items as disabled preemptively to
          * make them appear non-interactive.
@@ -310,7 +309,7 @@ public class BottomNavigationView extends FrameLayout {
         /**
          * Called when the currently selected item in the bottom navigation menu is selected again.
          *
-         * @param item The selected item
+         * The selected item
          */
         void onNavigationItemReselected(int curPos);
     }
@@ -343,7 +342,7 @@ public class BottomNavigationView extends FrameLayout {
         ColorStateList baseColor = AppCompatResources.getColorStateList(
                 getContext(), value.resourceId);
         if (!getContext().getTheme().resolveAttribute(
-                android.support.v7.appcompat.R.attr.colorPrimary, value, true)) {
+                androidx.appcompat.R.attr.colorPrimary, value, true)) {
             return null;
         }
         int colorPrimary = value.data;

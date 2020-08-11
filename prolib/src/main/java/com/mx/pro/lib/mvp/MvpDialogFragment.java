@@ -3,8 +3,8 @@ package com.mx.pro.lib.mvp;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatDialogFragment;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatDialogFragment;
 import android.view.View;
 
 import com.mx.pro.lib.mvp.delegate.FragmentMvpDelegate;

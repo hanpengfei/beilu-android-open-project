@@ -1,7 +1,7 @@
 package com.scj.beilu.app.mvp.home;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.mx.pro.lib.mvp.network.callback.ObserverCallback;
 import com.scj.beilu.app.mvp.find.FindInfoPre;

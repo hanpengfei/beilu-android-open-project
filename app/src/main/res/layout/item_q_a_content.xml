@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -70,4 +70,4 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_a_content"
         tools:text="适合0基础和初级的同学学习，课程叠加练习1。难度和强度会作12践增加。适合0基础和初级的同学学习，课程叠加练习。难度和强度会作践增加。" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

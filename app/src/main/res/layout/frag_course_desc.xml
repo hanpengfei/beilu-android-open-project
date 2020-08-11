@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:paddingTop="20dp">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -19,7 +19,7 @@
         app:showDividers="middle">
 
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="24dp">
@@ -120,7 +120,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_course_img"
                 tools:text="跑步前的热身活动，帮助我们预防损伤，跑出健康与活活力。根据从一般到专项的热身原则，我们从关节功能能开始进行热身活动，逐步过渡到全身的温度提升，最最后到贴近专项，让你在短短的几分钟之后，能直接上上跑道，达到最佳跑步状态。Burpees 是单位时间内燃烧热量最高的健身动作之一，本课程共 100 次变式 Burpees，将会全方位轰炸你的" />
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <LinearLayout
@@ -137,13 +137,13 @@
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_course_outline_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
-                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_course_outline" />
         </LinearLayout>
 
@@ -160,7 +160,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_q_a_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
                 android:focusableInTouchMode="false"
                 android:nestedScrollingEnabled="false"
                 android:orientation="vertical"
-                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_q_a_content" />
         </LinearLayout>
 
@@ -196,5 +196,5 @@
                 android:textSize="@dimen/text_size_12"
                 tools:text="跑步前的热身活动，帮助我们预防损伤，跑出健康与活" />
         </LinearLayout>
-    </android.support.v7.widget.LinearLayoutCompat>
-</android.support.v4.widget.NestedScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

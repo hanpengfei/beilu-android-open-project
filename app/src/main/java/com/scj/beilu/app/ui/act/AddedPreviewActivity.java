@@ -3,7 +3,7 @@ package com.scj.beilu.app.ui.act;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 import android.widget.Button;
 
 import com.gyf.immersionbar.ImmersionBar;

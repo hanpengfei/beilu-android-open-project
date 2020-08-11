@@ -2,7 +2,7 @@ package com.scj.beilu.app.mvp.find;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.design.widget.TabLayout;
+import com.google.android.material.tabs.TabLayout;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;

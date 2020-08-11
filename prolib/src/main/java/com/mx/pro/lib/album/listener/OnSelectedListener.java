@@ -17,7 +17,7 @@
 package com.mx.pro.lib.album.listener;
 
 import android.net.Uri;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.util.List;
 
