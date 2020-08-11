@@ -15,6 +15,7 @@ import com.scj.beilu.app.dao.DaoMaster;
 import com.scj.beilu.app.dao.DaoSession;
 import com.scj.beilu.app.helper.MySQLiteOpenHelper;
 import com.tencent.smtt.sdk.QbSdk;
+import com.umeng.commonsdk.debug.E;
 
 
 /**
@@ -32,15 +33,21 @@ public class MyApplication extends LibApplication {
 
         initDao();
 
-        initCloudChannel(this);
 
-        //在使用SDK各组件之前初始化context信息，传入ApplicationContext
-        SDKInitializer.initialize(this);
-        //自4.3.0起，百度地图SDK所有接口均支持百度坐标和国测局坐标，用此方法设置您使用的坐标类型.
-        //包括BD09LL和GCJ02两种坐标，默认是BD09LL坐标。
-        SDKInitializer.setCoordType(CoordType.BD09LL);
+        try{
+            initCloudChannel(this);
+            //在使用SDK各组件之前初始化context信息，传入ApplicationContext
+            SDKInitializer.initialize(this);
+            //自4.3.0起，百度地图SDK所有接口均支持百度坐标和国测局坐标，用此方法设置您使用的坐标类型.
+            //包括BD09LL和GCJ02两种坐标，默认是BD09LL坐标。
+            SDKInitializer.setCoordType(CoordType.BD09LL);
+            initTBS();
+        }catch (Exception e){
+            Logger.e("初始化SDK失败",e);
+        }
 
-        initTBS();
+
+
     }
 
     private void initDao() {

@@ -52,10 +52,9 @@
         android:resizeableActivity="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        tools:replace="android:appComponentFactory,allowBackup,icon,theme,label"
-        android:appComponentFactory="s">
-
+        tools:ignore="GoogleAppIndexingWarning">
+<!--        tools:replace="android:appComponentFactory,allowBackup,icon,theme,label"-->
+<!--        android:appComponentFactory="s"-->
 
         <!--android:name=".ui.act.MainActivity"-->
         <activity

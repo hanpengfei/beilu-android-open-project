@@ -1,5 +1,6 @@
 package com.mx.pro.lib.smartrefresh.layout.footer;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.DashPathEffect;
@@ -45,6 +46,7 @@ public class FalsifyFooter extends InternalAbstract implements RefreshFooter {
     }
 
     @Override
+    @SuppressLint("StringFormatMatches")
     protected void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
         final View thisView = this;
