@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
+
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +14,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
@@ -614,17 +616,13 @@ public class HomeFrag extends BaseMvpFragment<HomePre.HomeView, HomePre>
         public void onReceiveLocation(BDLocation location) {
 
             if (null != location && location.getLocType() != BDLocation.TypeServerError) {
-
-                if (mTvCity != null) {
-
-                    String city = location.getCity().replace("市", "");
-                    mTvCity.setText(city);
-                }
-
                 if (location.getLocType() == BDLocation.TypeNetWorkException) {
                     ToastUtils.showToast(mFragmentActivity, "网络不同导致定位失败，请检查网络是否通畅");
                 } else if (location.getLocType() == BDLocation.TypeCriteriaException) {
                     ToastUtils.showToast(mFragmentActivity, "无法获取有效定位依据，定位失败，请检查运营商网络或者WiFi网络是否正常开启，尝试重新请求定位");
+                } else if (mTvCity != null && location.getCity() != null) {
+                    String city = location.getCity().replace("市", "");
+                    mTvCity.setText(city);
                 }
             }
         }
